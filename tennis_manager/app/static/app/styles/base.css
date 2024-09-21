@@ -1,0 +1,33 @@
+:root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+head {
+    display: none;
+}
+
+.navigator {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1rem 10vw;
+}
+
+.navigator a {
+    color: black;
+    text-decoration: none;
+}
+
+.navigator a:hover {
+    color: blue;
+}
+
+.table {}
+
+.container {}

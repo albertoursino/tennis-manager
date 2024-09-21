@@ -1,0 +1,30 @@
+{% extends "app/base.html" %} {% load static %}
+
+{% block title %}Fields{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <table id="fields" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for field in fields %}
+            <tr>
+                <td>{{ field.number }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="navigator">
+    <a href="/">Calendar</a>
+    <a href="users">Users</a>
+    <a href="matches">Matches</a>
+    <a href="fields">Fields</a>
+</div>
+{% endblock %}

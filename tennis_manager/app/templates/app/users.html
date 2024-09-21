@@ -1,0 +1,32 @@
+{% extends "app/base.html" %} {% load static %}
+
+{% block title %}Users{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <table id="users" class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+            <tr>
+                <td>{{ user.name }}</td>
+                <td>{{ user.surname }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<div class="navigator">
+    <a href="/">Calendar</a>
+    <a href="users">Users</a>
+    <a href="matches">Matches</a>
+    <a href="fields">Fields</a>
+</div>
+{% endblock %}
