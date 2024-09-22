@@ -1,3 +1,5 @@
 ﻿__pycache__
 tennis_manager/static
 .env
+tennis_manager/db.sqlite3
+*.sqlite3
